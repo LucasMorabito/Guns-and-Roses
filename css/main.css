@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGINA DE INICIO */
+.encabezado {
+    background-color: rgb(80, 79, 79);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.encabezado__titulo {
+    margin-left: .5rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+.encabezado__contenedor {
+    display: flex;
+    align-items: center;
+
+}
+.encabezado__logo-titulo {
+    width: 70px;
+    height: 70px;
+}
+
+.navegador__item {
+    text-decoration: none;
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navegador__item a {
+    text-decoration: none;
+    margin: 1rem;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+.titulo {
+    color: black;
+    margin: 1rem;
+
+}
+
+body {
+    background-color: black;
+}
+
+.imagen-de-fondo {
+    height: 551px;
+    width: 1363px;
+}
+
+.pie-de-pagina {
+    background-color: black;
+    color: rgb(63, 62, 62);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 550;
+    text-align: center;
+}
+/* PAGINA DE INICIO */
+/* PAGINA DE INTEGRANTES */
+
+.info {
+    display: flex;
+    align-items: center;
+}
+.cantante {
+    width: 330px;
+    height: auto;
+    margin: 3rem 2rem 3rem 2rem;
+}
+
+.info-cantante {
+    color: white;
+    margin: 1rem 2rem 2rem 2rem;
+    font-size: large;
+}
+.info-cantante::first-letter {
+    color: goldenrod;
+    font-size: 1.3rem;
+}
+
+/* PAGINA DE INTEGRANTES */
+
+/* PAGINA DE DISCOGRAFIA */
+
+.album {
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+.album__disco {
+
+    margin: 2.0rem;
+    width: 205px;
+    height: 205px;
+    gap: 2rem;
+}
+
+/* PAGINA DE DISCOGRAFIA */
+
+/* PAGINA DE TOUR */
+.tour {
+    background-color: darkred;
+    border-style: solid;
+    border-color: goldenrod;
+    border-width: 5px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.tour-info {
+    margin: auto;
+    color: beige;
+    font-size: larger;
+}
+/* PAGINA DE TOUR */
+
+/* PAGINA DE CONTACTO */
+.form {
+   display: block;
+   border-color: rgb(207, 36, 36);
+    border-style:solid ;
+    
+    
+}
+
+.contacto {
+    color: goldenrod;
+    margin: 1rem;
+
+}
+
+/* PAGINA DE CONTACTO */

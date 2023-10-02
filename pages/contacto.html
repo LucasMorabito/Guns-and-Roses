@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="encabezado">
+            <div class="encabezado__contenedor">
+                <h1 class="encabezado__titulo">CONTACTO</h1>
+                <img src="../img/gunsnroseslogo.jpg" alt="logo de guns and roses" class="encabezado__logo-titulo">
+            </div>
+            
+            <ul>
+                <li class="navegador__item"><a href="../index.html">inicio</a></li>
+                <li class="navegador__item"><a href="./integrantes.html">integrantes</a></li>
+                <li class="navegador__item"><a href="./discografia.html">discografia</a></li>
+                <li class="navegador__item"><a href="./tour.html">tour</a></li>
+                <li class="navegador__item"><a href="./contacto.html">contacto</a></li>             
+            </ul>
+        </nav>
+    </header>
+    <div>
+    <h2 class="contacto">Contactanos</h2>
+    <form action="procesar_form.php" method="post" class="contenedor-form">
+        
+        <label for="nombre">nombre</label>
+        <input type="text" name="nombre" class="form" required>
+
+        <label for="email">email</label>
+        <input type="text" name="email" class="form" required>
+        <textarea class="form" name="textarea" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="enviar" class="form">
+        <input type="reset" value="reiniciar" class="form">
+
+    </form>
+    </div>
+    <footer>
+        <p id="pie2" class="pie-de-pagina">pagina web diseñada por: Lucas Morabito</p>
+
+     </footer>
+
+    
+</body>
+</html>

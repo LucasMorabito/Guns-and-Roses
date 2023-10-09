@@ -5,6 +5,12 @@
 }
 
 /* PAGINA DE INICIO */
+.banner {
+    background-image: url(../img/gunsnrosesbanner.jpg);
+    background-repeat: no-repeat;
+   background-size: 100vw 100vh
+}
+
 .encabezado {
     background-color: rgb(80, 79, 79);
     display: flex;
@@ -46,28 +52,36 @@
 
 }
 
+
+
+.color-nav {
+    color:rgb(238, 236, 236) !important;
+}
+
 body {
     background-color: black;
 }
 
-.imagen-de-fondo {
-    height: 551px;
-    width: 1363px;
+.footer {
+    text-align: center;
+    margin-top: 1.8rem;
 }
 
-.pie-de-pagina {
-    background-color: black;
-    color: rgb(63, 62, 62);
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 550;
-    text-align: center;
+.footer__logo {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    
 }
+
+
 /* PAGINA DE INICIO */
 /* PAGINA DE INTEGRANTES */
 
 .info {
     display: flex;
     align-items: center;
+    
 }
 .cantante {
     width: 330px;
@@ -84,15 +98,20 @@ body {
     color: goldenrod;
     font-size: 1.3rem;
 }
+#axl {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 /* PAGINA DE INTEGRANTES */
 
 /* PAGINA DE DISCOGRAFIA */
 
 .album {
-    display: flex;
-    flex-flow: row wrap;
-    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 4rem;    
 }
 .album__disco {
 
@@ -100,6 +119,7 @@ body {
     width: 205px;
     height: 205px;
     gap: 2rem;
+    object-fit: cover;
 }
 
 /* PAGINA DE DISCOGRAFIA */
@@ -121,18 +141,46 @@ body {
 /* PAGINA DE TOUR */
 
 /* PAGINA DE CONTACTO */
-.form {
-   display: block;
-   border-color: rgb(207, 36, 36);
-    border-style:solid ;
-    
-    
+.formulario {
+    width: 450px;
+    margin: auto;
+    background: rgb(61, 60, 60);
+    padding: 10px 20px;
+    margin-top: 9rem;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.formulario__titulo {
+    color: beige;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    margin: 0;
 }
 
-.contacto {
-    color: goldenrod;
-    margin: 1rem;
-
+.formulario__input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
 }
+.formulario__textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.formulario__boton {
+    border-radius:10px;
+    background-color: beige;
+    width: 12.67rem;
+}
+
 
 /* PAGINA DE CONTACTO */

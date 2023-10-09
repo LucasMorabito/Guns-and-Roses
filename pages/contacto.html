@@ -4,47 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
     <header>
-        <nav class="encabezado">
-            <div class="encabezado__contenedor">
-                <h1 class="encabezado__titulo">CONTACTO</h1>
-                <img src="../img/gunsnroseslogo.jpg" alt="logo de guns and roses" class="encabezado__logo-titulo">
+        <nav class="navbar navbar-expand-lg  bg-dark border-bottom border-body navbar fixed-top navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand encabezado__logo-titulo" href="../index.html"><img src="../img/gunsnroseslogo.jpg" width="70px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active color-nav" aria-current="page" href="../index.html">inicio</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link active color-nav" aria-current="page" href="./integrantes.html">integrantes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-nav" href="./discografia.html">discografia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-nav" href="./tour.html">tour</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-nav" href="./contacto.html" >contacto</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            
-            <ul>
-                <li class="navegador__item"><a href="../index.html">inicio</a></li>
-                <li class="navegador__item"><a href="./integrantes.html">integrantes</a></li>
-                <li class="navegador__item"><a href="./discografia.html">discografia</a></li>
-                <li class="navegador__item"><a href="./tour.html">tour</a></li>
-                <li class="navegador__item"><a href="./contacto.html">contacto</a></li>             
-            </ul>
-        </nav>
+          </nav>
     </header>
-    <div>
-    <h2 class="contacto">Contactanos</h2>
-    <form action="procesar_form.php" method="post" class="contenedor-form">
-        
-        <label for="nombre">nombre</label>
-        <input type="text" name="nombre" class="form" required>
+  
+   
+    <form action="" class="formulario">
+      <h2 class="formulario__titulo">CONTACTO</h2>
+      <input class="formulario__input" type="text" name="nombre" placeholder="nombre">
+      <input class="formulario__input" type="text" name="correo" placeholder="correo">
+      <input class="formulario__input" type="text" name="telefono" placeholder="telefono">
+      <textarea class="formulario__textarea" name="mensaje" placeholder="escriba aqui"></textarea>
+      <input class="formulario__boton" type="button" value="enviar">
+      <input class="formulario__boton" type="reset" value="reiniciar">
 
-        <label for="email">email</label>
-        <input type="text" name="email" class="form" required>
-        <textarea class="form" name="textarea" cols="30" rows="10"></textarea>
-
-        <input type="submit" value="enviar" class="form">
-        <input type="reset" value="reiniciar" class="form">
 
     </form>
-    </div>
+  
     <footer>
-        <p id="pie2" class="pie-de-pagina">pagina web diseñada por: Lucas Morabito</p>
+        <div class="footer">
+            <img class="footer__logo" src="../img/spotify.jpg"   alt="spotify">
+            <img class="footer__logo" src="../img/instagram.jpg" alt="instagram">
+            <img class="footer__logo" src="../img/twitter.png"   alt="twitter">
+            <img class="footer__logo" src="../img/facebook.jpg"  alt="facebook">  
+            </div>
 
      </footer>
-
-    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

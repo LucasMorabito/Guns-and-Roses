@@ -55,7 +55,7 @@
 
 
 .color-nav {
-    color:rgb(238, 236, 236) !important;
+    color:rgb(238, 236, 236);
 }
 
 body {
@@ -104,6 +104,34 @@ body {
     flex-direction: row-reverse;
 }
 
+@media screen and (max-width: 980px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+    .info-cantante {
+        font-size: 1.2rem;
+    }
+    .cantante {
+        margin: 3rem 1rem 1rem 1rem;
+    }
+
+    #axl{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .info-cantante {
+        font-size: 1rem;
+    }
+    .cantante {
+        width: 250px;
+        height: auto;
+    }
+}
+
 /* PAGINA DE INTEGRANTES */
 
 /* PAGINA DE DISCOGRAFIA */
@@ -120,23 +148,44 @@ body {
     height: 205px;
     gap: 2rem;
     object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
 }
+@media screen and (max-width: 980px) {
+    .album {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .album {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    
+
 
 /* PAGINA DE DISCOGRAFIA */
 
 /* PAGINA DE TOUR */
 .tour {
-    background-color: darkred;
+   background-color: rgb(39, 38, 38);
     border-style: solid;
-    border-color: goldenrod;
-    border-width: 5px;
-    margin-top: 2rem;
+    border-color: yellow;
+    border-width: 3px;
+    margin: 1.5rem;
     margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.tour1 {
+    margin-top: 7.4rem;
 }
 .tour-info {
-    margin: auto;
+    margin: 1rem;
     color: beige;
-    font-size: larger;
+    font-size: 1.5rem;
+    
 }
 /* PAGINA DE TOUR */
 

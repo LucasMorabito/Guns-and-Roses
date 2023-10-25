@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9f12e06fa6.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../sass/main.css">
 </head>
 
 <body>
@@ -26,7 +30,7 @@
                     <a class="nav-link active color-nav" aria-current="page" href="./integrantes.html">integrantes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link color-nav" href="./discografia.html">discografia</a>
+                    <a class="nav-link color-nav" href="./discografia.html">discografía</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link color-nav" href="./tour.html">tour</a>
@@ -40,26 +44,28 @@
           </nav>
     </header>
   
-   
+   <main>
     <form action="" class="formulario">
-      <h2 class="formulario__titulo">CONTACTO</h2>
-      <input class="formulario__input" type="text" name="nombre" placeholder="nombre">
-      <input class="formulario__input" type="text" name="correo" placeholder="correo">
-      <input class="formulario__input" type="text" name="telefono" placeholder="telefono">
-      <textarea class="formulario__textarea" name="mensaje" placeholder="escriba aqui"></textarea>
-      <input class="formulario__boton" type="button" value="enviar">
-      <input class="formulario__boton" type="reset" value="reiniciar">
+      <h2       class="formulario__titulo">CONTACTO</h2>
+      <input    class="formulario__input"     type="text" name="nombre" placeholder="nombre">
+      <input    class="formulario__input"     type="text" name="correo" placeholder="correo">
+      <input    class="formulario__input"     type="text" name="telefono" placeholder="telefono">
+      <textarea class="formulario__textarea"  name="mensaje" placeholder="escriba aqui"></textarea>
+      <input    class="formulario__boton"     type="submit" value="enviar">
+      <input    class="formulario__boton"     type="reset"  value="reiniciar">
 
 
     </form>
-  
+  </main>
     <footer>
-        <div class="footer">
-            <img class="footer__logo" src="../img/spotify.jpg"   alt="spotify">
-            <img class="footer__logo" src="../img/instagram.jpg" alt="instagram">
-            <img class="footer__logo" src="../img/twitter.png"   alt="twitter">
-            <img class="footer__logo" src="../img/facebook.jpg"  alt="facebook">  
-            </div>
+      <div class="footer">
+      <i class="fa-brands fa-spotify    fa-xl redes icon1" style="color: #ffffff;"></i>
+      <i class="fa-brands fa-youtube    fa-xl redes icon2" style="color: #ffffff;"></i>
+      <i class="fa-brands fa-x-twitter  fa-xl redes icon3" style="color: #ffffff;"></i>
+      <i class="fa-brands fa-facebook-f fa-xl redes icon4" style="color: #ffffff;"></i>
+      <i class="fa-brands fa-instagram  fa-xl redes icon5" style="color: #ffffff;"></i>
+     
+    </div>
 
      </footer>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 

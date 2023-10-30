@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: rgb(255, 94, 0);
+    color: rgb(255, 255, 255);
+}
+
+html {
+    min-height: 100vh;
+
+    body {
+        min-height: 100vh;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "pie";
+    }
+    
+}
+
+
+.banner {
+    background-image: url(../img/gunsnrosesbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

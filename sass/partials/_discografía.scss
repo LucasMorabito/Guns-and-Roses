@@ -1,0 +1,41 @@
+.album {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 5rem;
+
+    @include media1 {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    @include media2 {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    @include media3 {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .album__nombre {
+        font-size: 1.10rem;
+        text-align: center;
+        color: rgb(255, 102, 0);
+        -webkit-text-stroke: .80px rgb(179, 0, 0);
+        padding-top: .45rem;
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    
+    .album__disco {
+        margin: 2rem 0rem 0rem 2rem;
+        transition: 0.3s;
+        width: 12rem;
+        object-fit:cover;
+        border: 1px solid rgb(17, 17, 17);
+  
+    }
+
+    .album__disco:hover {
+        transform: scale(1.05);
+    }
+
+}

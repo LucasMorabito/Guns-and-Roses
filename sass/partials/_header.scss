@@ -1,0 +1,20 @@
+header {
+    grid-area: header;
+}
+
+.encabezado__logo-titulo {
+    width: 70px;
+    height: 70px;
+}
+
+.color-nav {
+    color:white;
+    transition: 0.3s;
+    font-size: 1.2rem;
+    font-family: 'Alegreya Sans SC', sans-serif;
+
+    &:hover {
+        transform: scale(1.05);
+        color: white;
+    }
+}

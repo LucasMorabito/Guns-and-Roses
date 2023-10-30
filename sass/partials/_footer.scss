@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    padding: 0;
+    grid-area: footer;
+
+    .redes {
+        margin: 0 0.4rem;
+        width:  40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background: rgb(29, 29, 29);
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+        margin-top: 1.2rem;
+        transition: all 0.3s ease;
+    }
+
+    .icon1:hover {
+        background: rgb(18, 180, 18);
+    }
+    .icon2:hover {
+        background: $rojo;
+    }
+    .icon3:hover {
+        background: rgb(79, 79, 241);
+    }
+    .icon4:hover {
+        background: rgb(5, 5, 192);
+    }
+    .icon5:hover {
+        background: rgb(192, 19, 126);
+    }
+}
+

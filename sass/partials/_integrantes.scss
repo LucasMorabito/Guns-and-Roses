@@ -1,0 +1,52 @@
+.info {
+    display: flex;
+    align-items: center;
+
+    @include media2 {
+    flex-direction: column;
+    }
+
+    .cantante {
+        width: 22rem;
+        height: auto;
+        margin: 3rem 2rem 3rem 2rem;
+
+        @include media1 {
+        width: 20rem;
+        }
+    }
+    
+    .info-cantante {
+        color: white;
+        margin: 1rem 2rem 2rem 2rem;
+        font-size: 1.18rem;
+
+        @include media1 {
+            font-size: 1.10rem;
+        }
+
+    }
+    .info-cantante::first-letter {
+        color: goldenrod;
+        font-size: 1.3rem;
+    }
+    
+}   
+#axl {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row-reverse;
+
+    @include media2 {
+        flex-direction: column;
+        }
+ }
+
+#izzy {
+    display: flex;
+    flex-direction: row-reverse;
+
+    @include media2 {
+        flex-direction: column;
+        }
+}

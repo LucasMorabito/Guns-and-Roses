@@ -1,0 +1,45 @@
+.tour {
+     background-color: rgb(39, 38, 38);
+     border-style: solid;
+     border-color: $naranja;
+     border-width: 2px;
+     margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+   
+     display: flex;
+     justify-content: space-between;
+ 
+     .tour-info {
+         margin: 1rem;
+         color: beige;
+         font-size: 1.5rem;
+         font-family: 'Rubik', sans-serif;
+         -webkit-text-stroke: 1px $naranja;
+
+     @include media3 {
+        font-size: 1.3rem;
+     }
+     }
+ }
+ .tour1 {
+     margin-top: 7.2rem;
+ }
+ 
+ .boton-padre {
+     display: flex;
+     justify-content: center;
+ 
+    .boton {
+     color: rgb(255, 255, 255);
+     background-color: rgb(39, 38, 38);
+     width: 8.50rem;
+     border: 2px solid $rojo;
+     font-family: 'Rubik', sans-serif;
+     margin-bottom: 1rem;
+     -webkit-text-stroke: .10px $naranja;
+
+     @include media3 {
+        width: 6rem;
+        font-size: .9rem;
+     }
+    }
+ }

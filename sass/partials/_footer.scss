@@ -19,6 +19,13 @@
         margin-bottom: 0.5rem;
         margin-top: 1.2rem;
         transition: all 0.3s ease;
+
+        @include media4 {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 1.2rem;
+        }
     }
 
     .icon1:hover {

@@ -24,7 +24,10 @@ main {
             left: 18%;
             font-size: 2rem;
         }
-        
+        @include media4 {
+            font-size: 1.8rem;
+            left: 12.20%;
+        }
     .titulo:hover {
         transform: scale(1.05);
         -webkit-text-stroke: 3px $rojo;

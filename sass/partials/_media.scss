@@ -15,3 +15,9 @@
         @content;
     }
 }
+
+@mixin media4 {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}

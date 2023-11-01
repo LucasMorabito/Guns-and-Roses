@@ -22,6 +22,10 @@
         -webkit-text-stroke: .80px rgb(179, 0, 0);
         padding-top: .45rem;
         font-family: 'Kanit', sans-serif;
+
+        @include media4 {
+            font-size: .8rem;
+        }
     }
     
     
@@ -31,6 +35,11 @@
         width: 12rem;
         object-fit:cover;
         border: 1px solid rgb(17, 17, 17);
+
+        @include media4 {
+            width: 10rem;
+            border: .8px solid rgb(17, 17, 17);
+        }
   
     }
 

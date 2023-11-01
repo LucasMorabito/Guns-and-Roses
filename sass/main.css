@@ -84,6 +84,12 @@ main .titulo {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 480px) {
+  main .titulo {
+    font-size: 1.8rem;
+    left: 12.2%;
+  }
+}
 main .titulo .titulo:hover {
   transform: scale(1.05);
   -webkit-text-stroke: 3px rgb(255, 0, 0);
@@ -110,6 +116,14 @@ main .titulo .titulo:hover {
   margin-bottom: 0.5rem;
   margin-top: 1.2rem;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 480px) {
+  .footer .redes {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2rem;
+  }
 }
 .footer .icon1:hover {
   background: rgb(18, 180, 18);
@@ -210,6 +224,11 @@ main .titulo .titulo:hover {
   padding-top: 0.45rem;
   font-family: "Kanit", sans-serif;
 }
+@media screen and (max-width: 480px) {
+  .album .album__nombre {
+    font-size: 0.8rem;
+  }
+}
 .album .album__disco {
   margin: 2rem 0rem 0rem 2rem;
   transition: 0.3s;
@@ -217,6 +236,12 @@ main .titulo .titulo:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid rgb(17, 17, 17);
+}
+@media screen and (max-width: 480px) {
+  .album .album__disco {
+    width: 10rem;
+    border: 0.8px solid rgb(17, 17, 17);
+  }
 }
 .album .album__disco:hover {
   transform: scale(1.05);
@@ -241,6 +266,12 @@ main .titulo .titulo:hover {
 @media screen and (max-width: 670px) {
   .tour .tour-info {
     font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tour .tour-info {
+    font-size: 1rem;
+    margin: 0.5rem;
   }
 }
 

@@ -3,17 +3,16 @@
     align-items: center;
 
     @include media2 {
-    flex-direction: column;
+        flex-direction: column;
     }
 
     .cantante {
         width: 22rem;
         height: auto;
         margin: 3rem 2rem 3rem 2rem;
-
-        @include media1 {
-        width: 20rem;
-        flex-direction: column;
+        
+        @include media3 {
+            flex-direction: column;
         }
     }
     
@@ -22,10 +21,10 @@
         margin: 1rem 2rem 2rem 2rem;
         font-size: 1.18rem;
 
-        @include media1 {
+        @include media2 {
             font-size: 1.10rem;
+            margin: 0rem 2rem 2.5rem 2rem;
         }
-
     }
     .info-cantante::first-letter {
         color: goldenrod;
@@ -40,7 +39,8 @@
 
     @include media2 {
         flex-direction: column;
-        }
+    }
+
  }
 
 #izzy {
@@ -49,5 +49,5 @@
 
     @include media2 {
         flex-direction: column;
-        }
+    }
 }

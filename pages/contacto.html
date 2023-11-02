@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
+    <title>Guns And Roses - Contactate con nosotros</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/gunsnroseslogo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../sass/main.css">
-    <meta name="description" content="En esta página podrás contactarte con nosotros y enviarnos tu mensaje, ademas podrás iniciar sesion para esta al tanto de todas las novedades">
+    <meta name="description" content="Contanos y habla con nosotros!">
     <meta name="keywords"    content="banda, rock, gunsnroses, hardrock, contacto, contactanos, escribenos, inicia sesion, mensaje, mail, nombre, contraseña">
 </head>
 
@@ -46,15 +47,15 @@
     </header>
   
    <main>
-    <form action="" class="formulario">
-      <h2       class="formulario__titulo">CONTACTO</h2>
-      <h3 class="formulario__nombre">Nombre:</h3>
+    <form class="formulario">
+      <h1       class="formulario__titulo">CONTACTO</h1>
+      <label class="formulario__nombre" for="Name">Nombre:</label>
       <input    class="formulario__input"     type="text" name="nombre" placeholder="Ingrese su nombre">
-      <h3 class="formulario__nombre">Correo:</h3>
-      <input    class="formulario__input"     type="text" name="correo" placeholder="Ingrese su email">
-      <h3 class="formulario__nombre">Telefono:</h3>
+      <label class="formulario__nombre" for="Email">E-mail:</label>
+      <input    class="formulario__input"     type="text" name="correo" placeholder="Ingrese su correo">
+      <label class="formulario__nombre" for="number">Número de teléfono:</label>
       <input    class="formulario__input"     type="text" name="telefono" placeholder="Ingrese su número de teléfono">
-      <h3 class="formulario__nombre">Mensaje:</h3>
+      <label class="formulario__nombre" for="text">Escríbenos</label>
       <textarea class="formulario__textarea"  name="mensaje" placeholder="Escriba aquí"></textarea>
       <input    class="formulario__boton"     type="submit" value="enviar">
       <input    class="formulario__boton"     type="reset"  value="reiniciar">

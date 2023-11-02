@@ -16,19 +16,21 @@ html {
         min-height: 100vh;
         background-color: black;
         display: grid;
-        grid-template-columns: 1fr;
         grid-template-rows: auto 1fr auto;
         grid-template-areas: 
         "header"
         "main"
         "pie";
+
+        main {
+            grid-area: main;
+        }
     }
-    
+    .banner {
+        background-image: url(../img/gunsnrosesbanner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 
-.banner {
-    background-image: url(../img/gunsnrosesbanner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}

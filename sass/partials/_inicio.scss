@@ -1,32 +1,27 @@
-main {
+.main-inicio {
     grid-area: main;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     .titulo {
         color: rgb(0, 0, 0);
         font-size: 3.5rem;
         -webkit-text-stroke: 2px $rojo;
-        position: absolute;
-        top: 50.50%;
-        left: 29.10%;
         font-family: 'Archivo Black', sans-serif;
         transition: all 0.3s;
 
         @include media1 {
             font-size: 3.3rem;
-            left: 25.50%;
         }
         @include media2 {
-            left: 22%;
             font-size: 3rem;
         }
         @include media3 {
-            left: 18%;
             font-size: 2rem;
         }
         @include media4 {
             font-size: 1.8rem;
-            left: 12.20%;
         }
     .titulo:hover {
         transform: scale(1.05);

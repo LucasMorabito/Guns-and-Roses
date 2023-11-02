@@ -21,12 +21,13 @@ html body {
   min-height: 100vh;
   background-color: black;
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "pie";
 }
-
-.banner {
+html body main {
+  grid-area: main;
+}
+html .banner {
   background-image: url(../img/gunsnrosesbanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,62 +36,55 @@ html body {
 header {
   grid-area: header;
 }
-
-.encabezado__logo-titulo {
+header .encabezado__logo-titulo {
   width: 70px;
   height: 70px;
 }
-
-.color-nav {
+header .color-nav {
   color: white;
   transition: 0.3s;
   font-size: 1.2rem;
   font-family: "Alegreya Sans SC", sans-serif;
 }
-.color-nav:hover {
+header .color-nav:hover {
   transform: scale(1.05);
   color: white;
 }
 
-main {
+.main-inicio {
   grid-area: main;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main .titulo {
+.main-inicio .titulo {
   color: rgb(0, 0, 0);
   font-size: 3.5rem;
   -webkit-text-stroke: 2px rgb(255, 0, 0);
-  position: absolute;
-  top: 50.5%;
-  left: 29.1%;
   font-family: "Archivo Black", sans-serif;
   transition: all 0.3s;
 }
 @media screen and (max-width: 1180px) {
-  main .titulo {
+  .main-inicio .titulo {
     font-size: 3.3rem;
-    left: 25.5%;
   }
 }
 @media screen and (max-width: 900px) {
-  main .titulo {
-    left: 22%;
+  .main-inicio .titulo {
     font-size: 3rem;
   }
 }
 @media screen and (max-width: 670px) {
-  main .titulo {
-    left: 18%;
+  .main-inicio .titulo {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 480px) {
-  main .titulo {
+  .main-inicio .titulo {
     font-size: 1.8rem;
-    left: 12.2%;
   }
 }
-main .titulo .titulo:hover {
+.main-inicio .titulo .titulo:hover {
   transform: scale(1.05);
   -webkit-text-stroke: 3px rgb(255, 0, 0);
 }
@@ -124,7 +118,7 @@ main .titulo .titulo:hover {
     width: 30px;
     height: 30px;
     line-height: 30px;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 }
 .footer .icon1:hover {
@@ -157,9 +151,8 @@ main .titulo .titulo:hover {
   height: auto;
   margin: 3rem 2rem 3rem 2rem;
 }
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 670px) {
   .info .cantante {
-    width: 20rem;
     flex-direction: column;
   }
 }
@@ -168,9 +161,10 @@ main .titulo .titulo:hover {
   margin: 1rem 2rem 2rem 2rem;
   font-size: 1.18rem;
 }
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 900px) {
   .info .info-cantante {
     font-size: 1.1rem;
+    margin: 0rem 2rem 2.5rem 2rem;
   }
 }
 .info .info-cantante::first-letter {
@@ -259,6 +253,11 @@ main .titulo .titulo:hover {
   margin: 1.5rem 1.5rem 0.5rem 1.5rem;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 670px) {
+  .tour {
+    margin: 1rem 1rem 0.25rem 1rem;
+  }
 }
 .tour .tour-info {
   margin: 1rem;

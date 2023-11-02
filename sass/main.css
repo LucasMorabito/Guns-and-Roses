@@ -106,6 +106,8 @@ main .titulo .titulo:hover {
   grid-area: footer;
 }
 .footer .redes {
+  color: rgb(211, 211, 211);
+  font-size: 1.35rem;
   margin: 0 0.4rem;
   width: 40px;
   height: 40px;
@@ -158,6 +160,7 @@ main .titulo .titulo:hover {
 @media screen and (max-width: 1180px) {
   .info .cantante {
     width: 20rem;
+    flex-direction: column;
   }
 }
 .info .info-cantante {
@@ -241,6 +244,7 @@ main .titulo .titulo:hover {
   .album .album__disco {
     width: 10rem;
     border: 0.8px solid rgb(17, 17, 17);
+    margin: 2rem 0rem 0rem 0.6rem;
   }
 }
 .album .album__disco:hover {

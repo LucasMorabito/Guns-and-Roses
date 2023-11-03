@@ -151,11 +151,6 @@ header .color-nav:hover {
   height: auto;
   margin: 3rem 2rem 3rem 2rem;
 }
-@media screen and (max-width: 670px) {
-  .info .cantante {
-    flex-direction: column;
-  }
-}
 .info .info-cantante {
   color: white;
   margin: 1rem 2rem 2rem 2rem;

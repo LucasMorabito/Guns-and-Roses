@@ -10,6 +10,10 @@
         width: 22rem;
         height: auto;
         margin: 3rem 2rem 3rem 2rem;
+
+        @include media3 {
+            width:  20rem;
+        }
     }
     
     .info-cantante {
@@ -20,6 +24,10 @@
         @include media2 {
             font-size: 1.10rem;
             margin: 0rem 2rem 2.5rem 2rem;
+        }
+
+        @include media3 {
+            font-size: 1rem;
         }
     }
     .info-cantante::first-letter {

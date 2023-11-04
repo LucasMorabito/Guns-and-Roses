@@ -4,6 +4,7 @@
 
     @include media2 {
         flex-direction: column;
+        text-align: center;
     }
 
     .cantante {
@@ -12,7 +13,8 @@
         margin: 3rem 2rem 3rem 2rem;
 
         @include media3 {
-            width:  20rem;
+            width:  18rem;
+            margin: 2rem 1.5rem 1rem 1rem;
         }
     }
     

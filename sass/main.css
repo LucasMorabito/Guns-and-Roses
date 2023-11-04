@@ -144,6 +144,7 @@ header .color-nav:hover {
 @media screen and (max-width: 900px) {
   .info {
     flex-direction: column;
+    text-align: center;
   }
 }
 .info .cantante {
@@ -153,7 +154,8 @@ header .color-nav:hover {
 }
 @media screen and (max-width: 670px) {
   .info .cantante {
-    width: 20rem;
+    width: 18rem;
+    margin: 2rem 1.5rem 1rem 1rem;
   }
 }
 .info .info-cantante {

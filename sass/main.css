@@ -31,6 +31,7 @@ html .banner {
   background-image: url(../img/gunsnrosesbanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 header {
